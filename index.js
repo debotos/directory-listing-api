@@ -63,7 +63,7 @@ const typeDefs = gql`
 		execute: Boolean!
 	}
 
-	type DirItem {
+	type Directory {
 		uri: String!
 		isDirectory: Boolean!
 		isHidden: Boolean!
@@ -73,7 +73,7 @@ const typeDefs = gql`
 	}
 
 	type Query {
-		getDirListing(path: String, hidden: Boolean): [DirItem]
+		getDirListing(path: String, hidden: Boolean): [Directory]
 	}
 `
 // Resolvers
